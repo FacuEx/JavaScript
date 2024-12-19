@@ -13,7 +13,7 @@ function loguear(){
             break;  
     }
 
-    if((usuario !== "Facundo" || password !=="123456") && intentos >=3){
+    if((usuario !== "Facundo" || password !=="123456") && intentos < 1){
         alert("Su cuenta es incorrecta vuelva a intentarlo");
         if(intentos < 1){
             alert("Usted supero los tres intentos");
@@ -27,15 +27,16 @@ function loguear(){
     }
 
     else{
-            intentos--
-            if(intentos < 1){
-                alert("Usted supero los tres intentos");
-                break;
+        alert(`No se reconoce a ${usuario} usted tiene ${intentos} intentos`)
+        intentos--
+        if(intentos < 1){
+            alert("Usted supero los tres intentos");
+            break;
             }
         }
     }
     
-    while(identificar)
+    while(identificar === true)
     
 }
 loguear()
