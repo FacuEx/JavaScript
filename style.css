@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+                                                        /* IMAGEN DE FONDO */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./imagenes/loging.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+                                                        /* LOGIN */
+.wrapper{
+    width: 420px;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(35px);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2) ;
+}
+
+.wrapper h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 17px;
+    color: #000000;
+    padding: 10px 30px 10px 30px;
+}
+
+.register-link p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        margin: 10px;
+        text-align: center;
+}
+
+.register-link a{
+    color: rgb(248 180 184);
+    text-decoration: none; 
+    
+}
+
+.remember-forgot a{
+    color: rgb(254 246 159);
+    text-decoration: none;
+}
+/* succes y error JVS */
+
+.success{
+    color: green !important;
+}
+
+.error{
+    color: red;
+}
