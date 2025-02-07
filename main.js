@@ -92,7 +92,7 @@ function cargarUsuarioRecordado() {
     }
 }
 
-// Función para mostrar mensajes en pantalla
+//mostrar mensajes en pantalla
 function mostrarMensaje(mensaje, tipo) {
     messageDiv.classList.remove("success", "error");
     messageDiv.classList.add(tipo === "success" ? "success" : "error");
@@ -103,7 +103,7 @@ function mostrarMensaje(mensaje, tipo) {
     }, 3000);
 }
 
-// Evento de carga de página
+
 window.onload = function () {
     cargarUsuarioRecordado();
     mostrarHistorialUsuarios();
@@ -230,7 +230,7 @@ if (registerForm) {
     });
 }
 
-// Funciones auxiliares
+
 function guardarUsuarioRecordado(usuario) {
     localStorage.setItem("usuarioRecordado", usuario);
 }
